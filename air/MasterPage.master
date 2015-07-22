@@ -1,0 +1,334 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+
+
+     <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+    <script src="css/cufon-yui.js" type="text/javascript"></script>
+    <script src="css/Trebuchet_MS_400.font.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        Cufon.replace('.body-container h2, .booking, .text3', { hover: true, fontFamily: 'Trebuchet MS' });
+        Cufon.replace('.callUs', { fontFamily: 'Trebuchet MS' });
+    </script>
+    <style type="text/css">
+        .text
+        {
+            font-family: "Trebuchet MS" , Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <!--Menu -->
+    <link rel="stylesheet" href="css/jquery.megamenu.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/example.css" type="text/css" media="screen" />
+     
+    <script src="css/jquery.megamenu.js" type="text/javascript"></script>
+    <script type="text/javascript" src="css/megacaller.js"></script>
+    
+    <script type="text/javascript" src="css/jquery.megamenu.js"></script>
+
+    
+    <!--Ends Menu -->
+    <script type="text/javascript" src="css/jquery_float.js"></script>
+    <script type="text/javascript"><!--
+        floatingMenu.add('floatdiv',
+    {
+        targetBottom: 10,
+        prohibitXMovement: true,
+        snap: true
+    });
+//--></script>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-3268694-59']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+ 
+    </script>
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <!-- right side button -->
+    <div class="box" style="position: absolute; right: 0px; width: 40px; top: 250px;
+        min-height: 700px;">
+        <div id="floatdiv" class="box" style="position: absolute; width: 40px; height: 400px; top: 32px;">
+            <a href="#">
+                <img src="images/enquiryform.jpg" border="0px;" width="40" height="156" alt=""></a>
+        </div>
+    </div>
+    <!-- right side button ends -->
+    
+    <!-- headder strats -->
+    <div id="header_container">
+    <div class="header-holder">
+        <div class="logo">
+            <a href="Default.aspx">
+                <img src="images/logo.jpg" width="433" border="0" height="122" alt=""></a></div>
+        <div class="header-right">
+            <div class="text-right">
+                <label>
+                    <input name="Header1$txtSearch" type="text" id="Header1_txtSearch" class="input-box">
+                </label>
+                <label class="submit_1">
+                    <input type="submit" name="Header1$ibtnSearch" value="Submit" id="Header1_ibtnSearch" class="input-button2">
+                </label>
+            </div>
+            <div class="clear"></div>
+            <div id="top-nav">
+                <div class="home">
+                    <a href="Default.aspx">Home</a></div>
+                <div class="enquiry">
+                    <a href="CustomerSupport_servicerequestform.aspx">Enquiry </a>
+                </div>
+                <div class="contactus">
+                     <a href="ContactUs_RegisteredOffice.aspx">Contact Us </a>
+                </div>
+                <div class="sitemap">
+                    <a href="Content_SiteMap.aspx">Sitemap</a></div>
+                <div class="br-clear">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="br-clear">
+    </div>
+</div>
+    <!-- header ends -->
+    
+    <!-- nav strats -->
+    <div id="nav-container">
+    <div class="nav-top">
+        <!--MegaMenu Starts-->
+        <ul class="megamenu" style="display: block;">
+            <li class="mm-item" style="float: left;">
+                <h6>
+                    <a href="javascript:void(0)" class="mm-item-link">About Us</a></h6>
+                <div style="width: 240px; margin-left: 30px; display: none;" class="mm-item-content"><div class="mm-content-base">
+                    <ul>
+                        <li>
+                            <h3>
+                                <a href="AboutUs_Profile.aspx">Profile</a></h3>
+                        </li>
+                        <li>
+                            <h3>
+                                <a href="AboutUs_VisionAndValues.aspx">Vision &amp; Values</a></h3>
+                        </li>
+                        <li>
+                            <h3>
+                                <a href="AboutUs_SafetyStatement.aspx">Safety Statement</a></h3>
+                        </li>
+                        <li>
+                            <h3>
+                                <a href="AboutUs_QualityPolicy.aspx">Quality Policy</a></h3>
+                        </li>
+                        <li>
+                            <h3>
+                                <a href="AboutUs_ManagementTeam.aspx">Management Team</a></h3>
+                        </li>
+                        <li>
+                            <h3>
+                                <a href="AboutUs_AffiliationsAndAccreditations.aspx">Affiliations &amp; Accreditations</a></h3>
+                        </li>
+                    </ul>
+                </div><div class="mm-js-shadow"></div></div>
+            </li>
+
+            <li class="mm-item" style="float: left;">
+                <h6>
+                    <a href="javascript:void(0)" class="mm-item-link">Services</a></h6>
+                <div style="width: 952px; margin-left: 0px; display: none;" class="mm-item-content"><div class="mm-content-base">
+                    <ul>
+                        <li>
+                            <h3>
+                                <a href="Services_GroundHandling.aspx">Ground Handling</a></h3>
+                        </li>
+                        <li><a href="Services_PassengerServices.aspx">Passenger Services</a></li>
+                        <li><a href="Services_RampServices.aspx">Ramp Services</a></li>
+                        <li><a href="Services_LoadControlDespatchFlightOperations.aspx">Load Control, Despatch,
+                            Flight Operations</a></li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h3>
+                                <a href="Services_CargoAndFreightServices.aspx">Cargo &amp; Freight Services</a></h3>
+                        </li>
+                        <li><a href="Services_rampservicesfreighterhandling.aspx">Ramp Services - Freighter
+                            Handling </a></li>
+                        <li><a href="Services_warehouseoperations.aspx">Warehouse Operations </a></li>
+                        <li><a href="Services_supervisionanddocumentation.aspx">Supervision and Documentation</a></li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h3>
+                                <a href="Services_SpecialServices.aspx">Special Services </a>
+                            </h3>
+                        </li>
+                        <li>
+                            <h3>
+                                <a href="Services_vipexecutiveandgeneralaviation.aspx">VIP, Executive and General Aviation</a></h3>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h3>
+                                <a href="Services_Training.aspx">Training</a></h3>
+                        </li>
+                        <li>
+                            <h3>
+                                <a href="Services_GroundSupportEquipmentMaintainance.aspx">Ground Support Equipment
+                                    (GSE) Maintainance</a></h3>
+                        </li>
+                    </ul>
+                </div><div class="mm-js-shadow"></div></div>
+            </li>
+            <li class="mm-item" style="float: left;">
+                <h6>
+                    <a href="javascript:void(0)" class="mm-item-link">Contact Us</a></h6>
+                <div style="width: 240px; margin-left: 30px; display: none;" class="mm-item-content"><div class="mm-content-base">
+                    <ul>
+                        <li>
+                            <h3>
+                                <a href="ContactUs_Stations.aspx">Stations</a></h3>
+                        </li>
+                        <li>
+                            <h3>
+                                <a href="ContactUs_RegisteredOffice.aspx">Offices</a></h3>
+                        </li>
+                    </ul>
+                </div><div class="mm-js-shadow"></div></div>
+            </li>
+            <li class="mm-item" style="float: left;">
+                <h6>
+                    <a href="javascript:void(0)" class="mm-item-link">Customer Support</a></h6>
+                <div style="width: 240px; margin-left: 30px; display: none;" class="mm-item-content"><div class="mm-content-base">
+                    <ul>
+                        <li>
+                            <h3>
+                                <a href="CustomerSupport_ServiceRequestForm.aspx">Contact And Service Request</a></h3>
+                        </li>
+                        <li>
+                            <h3>
+                                <a href="CustomerSupport_SafetyCaresCambataActsResponsibly.aspx">Safety - C.A.R.E.S.
+                                    - Cambata Acts Responsibly, Efficiently and Safely</a></h3>
+                        </li>
+                        <li>
+                            <h3>
+                                <a href="CustomerSupport_OrganisationalHealthAndSafetyPolicy.aspx">Organisational Health
+                                    And Safety Policy</a></h3>
+                        </li>
+                        <li>
+                            <h3>
+                                <a href="CustomerSupport_RiskAssesments.aspx">Risk Assessments</a></h3>
+                        </li>
+                    </ul>
+                </div><div class="mm-js-shadow"></div></div>
+            </li>
+            <li class="mm-item" style="float: left;">
+                <h6>
+                    <a href="javascript:void(0)" class="mm-item-link">Media Room</a></h6>
+                <div style="width: 240px; margin-left: 30px; display: none;" class="mm-item-content"><div class="mm-content-base">
+                    <ul>
+                        <li>
+                            <h3>
+                                <a href="MediaRoom_CompanyUpdates.aspx">Company Updates</a></h3>
+                        </li>
+                        <li>
+                            <h3>
+                                <a href="MediaRoom_MediaContact.aspx">Media Contact</a></h3>
+                        </li>
+                        <li>
+                            <h3>
+                                <a href="MediaRoom_employeeIntranet.aspx">Employee Intranet</a></h3>
+                        </li>
+                    </ul>
+                </div><div class="mm-js-shadow"></div></div>
+            </li>
+            <li class="mm-item" style="float: left;">
+                <h6>
+                    <a href="javascript:void(0)" class="mm-item-link">Careers</a></h6>
+                <div style="width: 240px; margin-left: 30px; display: none;" class="mm-item-content"><div class="mm-content-base">
+                    <ul>
+ <li>
+                            <h3>
+                                <a href="Careers_generalenquiry.aspx">General Enquiries</a></h3>
+                        </li>
+                        <li>
+                            <h3>
+                                <a href="Careers_Opportunities.aspx">Opportunities</a></h3>
+                        </li>
+                        
+
+
+                    </ul>
+                </div><div class="mm-js-shadow"></div></div>
+            </li><li class="clear-fix"></li>
+        </ul>
+        <!--MegaMenu Ends-->
+        <!--Search -->
+        <!--Ends Search -->
+        <div class="cl">
+            <!--Clear -->
+        </div>
+    </div>
+</div>
+    <!-- nav ends -->
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+
+        
+        
+        <!-- footer starts -->
+        
+        <div id="footer">
+    <div class="footer-container">
+        <div class="footer-nav">
+            <ul>
+                
+                <li><a href="AboutUs_Profile.aspx">About Us</a></li>
+                <li><a href="Services_GroundHandling.aspx">Services</a></li>
+                <li><a href="ContactUs_RegisteredOffice.aspx">Contact Us</a></li>
+                <li><a href="CustomerSupport_ServiceRequestForm.aspx">Customer Support</a></li>
+                <li><a href="MediaRoom_CompanyUpdates.aspx">Media Room</a></li>
+                <li><a href="Careers_Opportunities.aspx">Careers</a></li>
+                <li><a href="Content_PrivacyPolicy.aspx">Privacy Policy</a></li>
+                <li><a href="Content_Disclaimer.aspx">Disclaimer</a></li>
+                <li style="background: none;"><a href="Content_SiteMap.aspx" class="last">Site Map</a></li>
+            </ul>
+        </div>
+        <div class="br-clear">
+        </div>
+        <div class="copy-right">
+            © 2012 <a href="#">Cambata Aviation Pvt. Ltd.</a> - All Rights Reserved.
+        </div>
+        <div class="magnon">
+            <div class="link">
+                Site by <a href="http://www.magnonsolutions.com" target="_blank">Magnon Solutions</a></div>
+        </div>
+    </div>
+</div>
+        
+        <!-- footer ends -->
+
+
+
+
+    </div>
+    </form>
+</body>
+</html>
