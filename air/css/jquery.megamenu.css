@@ -77,7 +77,8 @@ ul.megamenu li.home img {
 	display:block;
 }
 ul.megamenu div.mm-item-content {
-  background:transparent url(../images/menubg.png) repeat;
+  /background:transparent url(../images/menubg.png) repeat;
+  background-color: rgb(54, 118, 157);
   padding: 0px 0px 13px 0px;
   position: absolute;
   /*border: 1px solid #777;*/
