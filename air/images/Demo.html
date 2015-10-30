@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)file:///C:/Users/suraj.jaiswar/Downloads/dw_con_scroller/horiz.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Demo</title>
+<link rel="stylesheet" type="text/css" href="./Demo_files/demo.css">
+<style type="text/css">
+    
+div#inner2 {
+    white-space:nowrap;
+    }
+    
+div#wn2	{ 
+	position:relative; 
+	width:304px; height:20px;
+	overflow:hidden;
+	}
+</style>
+<script src="./Demo_files/dw-con-scroller.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+if ( DYN_WEB.Scroll_Div.isSupported() ) {
+	
+	DYN_WEB.Event.domReady( function() {
+		
+		
+		var wndo2 = new DYN_WEB.Scroll_Div('wn2', 'lyr2');
+		wndo2.makeSmoothAuto( {axis:'h', bRepeat:true, repeatId:'rpt2', speed:60, bPauseResume:true} );
+    
+	});
+}
+
+</script>
+</head>
+<body>
+
+<h1>Continuous Scroller - Horizontal Demo</h1>
+
+
+<div id="wn">
+    <div id="lyr1">
+        <div id="inner1">
+       
+
+        </div>
+        
+    </div>
+</div>  <!-- end wn div -->
+
+
+  
+
+<p>&nbsp;</p>
+
+<div id="wn2">
+    <div id="lyr2" style="position: absolute; left: -413px; top: 0px; visibility: visible;">
+        <div id="inner2"><span>Here is some text for horizontal continuous scrolling. And some more for our demo. </span><span id="rpt2">Here is some text for horizontal continuous scrolling. And some more for our demo. </span></div>
+		
+    </div>
+</div>
+
+
+
+
+
+</body></html>
